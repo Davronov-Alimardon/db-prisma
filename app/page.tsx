@@ -4,7 +4,7 @@ export default async function Home() {
   const tasks = await db.task.findMany({
     where: {
       title: {
-        contains: "Dav"
+        contains: ""
       }
     }
   });
